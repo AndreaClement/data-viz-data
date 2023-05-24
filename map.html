@@ -26,8 +26,8 @@ var projection = d3.geoMercator()
 
 d3.queue()
 //file:///home/andrea/2023_Master4/Data%20Visualization/project/project-2023-vizssr/map.html
-  .defer(d3.json, "file:///home/andrea/2023_Master4/Data%20Visualization/project/project-2023-vizssr/world.geojson")  // World shape
-  .defer(d3.csv, "file:///home/andrea/2023_Master4/Data%20Visualization/project/project-2023-vizssr/data_gpsLocSurfer.csv") // Position of circles
+  .defer(d3.json, "https://github.com/AndreaClement/data-viz-data/blob/main/world.geojson")  // World shape
+  .defer(d3.csv, "https://github.com/AndreaClement/data-viz-data/blob/main/data_gpsLocSurfer.csv") // Position of circles
   .await(ready);
 
 function ready(error, dataGeo, data) {
